@@ -1,7 +1,5 @@
 # Search through Emojis
 
-#### Install
+### Running Locally
 `npm install`
-
-#### Build
 `npm build`

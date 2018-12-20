@@ -26,7 +26,7 @@ class App extends Component {
             <FormGroup row>
               <Col xs={10} md={3}>
                 <ControlLabel sm={2}>Search Emojis</ControlLabel>
-                <FormControl type="search" name="search" id="Search" onChange={this.handleChange.bind(this)}/>
+                <FormControl autocomplete="off" type="search" name="search" id="Search" onChange={this.handleChange.bind(this)}/>
               </Col>
             </FormGroup>
           </form>

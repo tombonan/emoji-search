@@ -31,7 +31,7 @@ class App extends Component {
             </FormGroup>
           </form>
 
-        {(this.state.input != "") ? <Results data = {this.state.emojiFilter}/> : null }
+        {(this.state.input !== "") ? <Results data = {this.state.emojiFilter}/> : null }
       </div>
     );
   }

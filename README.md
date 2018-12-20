@@ -1,5 +1,6 @@
 # Search through Emojis
+Built using React via create-react-app
 
-### Running Locally
+### Run Locally
 `npm install`  
-`npm build`
+`npm start`

@@ -8,7 +8,7 @@ class Results extends Component {
         const data = this.props.data;
         const listEmojis = data.map(this.createItem);
         return (
-            <ul>{listEmojis}</ul>
+            <ul style={{ marginLeft: '-30px', marginTop: '10px' }}>{listEmojis}</ul>
         );
     }
 }

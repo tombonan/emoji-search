@@ -19,19 +19,21 @@ class App extends Component {
         });
     }
 
-  render() {
+    render() {
+
     return (
         <div className="App">
           <form>
             <FormGroup row>
-              <Col xs={10} md={3}>
+              <Col xs={10} md={3} style={{ margin: 'auto', marginTop: '100px' }}>
                 <ControlLabel sm={2}>Search Emojis</ControlLabel>
                 <FormControl autocomplete="off" type="search" name="search" id="Search" onChange={this.handleChange.bind(this)}/>
+                        {(this.state.input !== "") ? <Results data = {this.state.emojiFilter}/> : null }
               </Col>
             </FormGroup>
           </form>
 
-        {(this.state.input !== "") ? <Results data = {this.state.emojiFilter}/> : null }
+
       </div>
     );
   }
